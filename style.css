@@ -5,26 +5,20 @@
 
 html {
     font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Hero */
 /* Hero animation */
-
 .hero h1 {
-    
-        display: block;
-        width: fit-content;
-        font-size: 4rem;
-        position: relative;
-        color: transparent;
-        animation: text_reveal .5s ease forwards;
-        animation-delay: 1.5s;
-    
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1.5s;
 }
-
-
-
 
 #hero h1:nth-child(1) {
     animation-delay: 1s;
@@ -33,23 +27,23 @@ html {
     animation-delay: 2s;
 }
 #hero h1:nth-child(3) {
-    animation: text_reveal_name .5s ease forwards;
+    animation: text_reveal_name 0.5s ease forwards;
     animation-delay: 3s;
 }
 
 #hero h1 span {
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     height: 100%;
     width: 0;
-    background-color:rgb(111, 0, 255);
+    background-color: rgb(111, 0, 255);
     animation: text_reveal_box 1s ease;
     animation-delay: 1.5s;
 }
 
 #hero h1:nth-child(1) span {
-    animation-delay: .5s;
+    animation-delay: 0.5s;
 }
 #hero h1:nth-child(2) span {
     animation-delay: 1.5s;
@@ -58,6 +52,15 @@ html {
     animation-delay: 2.5s;
 }
 /* end hero-animation */
+
+#hero .container p {
+    color: rgb(111, 0, 255);
+}
+
+#hero .container h1:nth-child(4) {
+    font-size: 1rem;
+}
+
 .container {
     min-height: 100vh;
     min-width: 100%;
@@ -74,13 +77,13 @@ html {
     left: 50px;
     top: 250px;
 }
-    
+
 #hero .container img {
-position: absolute;
-top: 200px;
-right: 50px;
-border: 3px solid rgba(255, 255, 255, .8);
-border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
 }
 
 #hero {
@@ -94,9 +97,9 @@ border-radius: 50%;
 }
 
 #hero::after {
-    content: '';
+    content: "";
     background-color: black;
-    opacity: .3;
+    opacity: 0.3;
     position: absolute;
     left: 0;
     top: 0;
@@ -104,14 +107,13 @@ border-radius: 50%;
     width: 100%;
     z-index: -1;
 }
-    
 /* End Hero Section */
 
 /* key Frames */
 @keyframes text_reveal_box {
     50% {
-     width: 100%;
-     left: 0;
+        width: 100%;
+        left: 0;
     }
     100% {
         width: 0;
@@ -130,9 +132,3 @@ border-radius: 50%;
     }
 }
 /* End Key Frames */
-
-
-
-
-
-
